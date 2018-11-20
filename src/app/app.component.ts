@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
+import { faHammer, faUsers } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+	selector: 'app-the-big-event',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-thebigevent';
+	title = 'ng-thebigevent';
+	faHammer = faHammer;
+	faGroup = faUsers;
 }

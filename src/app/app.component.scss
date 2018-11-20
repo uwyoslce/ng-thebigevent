@@ -1,0 +1,28 @@
+.thebigevent {
+    height: 100%;
+    width: 100%;
+    header {
+      h1{
+        margin: 0;
+        padding: 0;
+      }
+    }
+}
+
+fa-icon {
+  font-size: 2rem;
+}
+
+.menu {
+    > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        > li {
+          > a {
+            display: block;
+            padding: 0.3rem 0.6rem;
+          }
+        }
+    }
+}

@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.is-flex {
+	display: flex;
+	width: 100%;
+  height: 100%;
+  align-items: stretch
+}
+
+.has-columns {
+	@extend .is-flex;
+	flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.has-rows {
+	@extend .is-flex;
+	flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flex-min {
+	flex: 0 0 0;
+}
+
+.flex-max {
+	flex: 1 1 auto;
+}
+
+.third {
+  flex-basis: (100%/3);
+}
+
+.is-column {
+  max-height: 100%;
+	&.scroll {
+		overflow-y: auto;
+	}
+	+ .is-column {
+		border-left: solid 1px #ccc;
+	}
+}
+
+.is-row {
+  max-width: 100%;
+	&.scroll {
+		overflow-x: auto;
+	}
+	+ .is-row {
+		border-top: solid 1px #ccc;
+	}
+}
+
+.box {
+
+  &.box--xs { padding: 0.5rem; }
+	&.box--sm { padding: .75rem; }
+  &,
+  &.box--md { padding: 1rem; }
+  &.box--lg { padding: 1.25rem; }
+  &.box--xl { padding: 1.5rem; }
+}
